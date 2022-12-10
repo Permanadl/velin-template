@@ -1,0 +1,32 @@
+{
+  "name": "velin",
+  "version": "1.0.0",
+  "description": "bootstrap 5 admin templat",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "gulp"
+  },
+  "author": "Dede Eli Permana",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-css-minify": "^0.9.2",
+    "gulp-html-partial": "^1.0.1",
+    "gulp-npm-dist": "^1.0.3",
+    "gulp-nunjucks": "^5.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-web-dependencies": "^1.2.0",
+    "sass": "^1.56.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "feather-icons": "^4.29.0",
+    "jquery": "^3.6.1"
+  }
+}

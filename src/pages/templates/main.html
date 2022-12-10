@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velin - Bootstrap 5 Admin Template</title>
+
+    <!-- Bootstrap 5.2.3 -->
+    <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
+
+    <!-- Velim Styles -->
+    <link rel="stylesheet" href="../assets/css/velin.min.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="main-container">
+            {% include "templates/sidebar.html" %}
+            <div class="main-page">
+                {% include "templates/topbar.html" %}
+
+                <!-- Content wrapper -->
+                <div class="content-wrapper">
+                    {% block content %}{% endblock %}
+
+                    <!-- Footer -->
+                    <footer class="content-footer footer">
+                        <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-column flex-md-row">
+                            <div class="mb-2 mb-md-0">
+                                &copy; <script>document.write(new Date().getFullYear())</script>, made with ❤️ by
+                                <a href="" class="footer-link fw-bolder">Dede Eli Permana</a>
+                            </div>
+                            <div>
+                                <a href="" class="footer-link me-4" target="_blank">Github</a>
+                                <a href="" class="footer-link me-4" target="_blank">Documentation</a>
+                                <a href="" class="footer-link me-4" target="_blank">Support</a>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- Footer -->
+                </div>
+                <!-- Content wrapper -->
+            </div>
+        </div>
+    </div>
+    <!-- Vendors -->
+    <script src="../assets/vendors/jquery/jquery.min.js"></script>
+    <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendors/feather-icons/feather.min.js"></script>
+    
+    <script src="../assets/js/velin.min.js"></script>
+</body>
+</html>

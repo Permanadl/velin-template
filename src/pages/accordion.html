@@ -1,0 +1,276 @@
+{% extends "templates/main.html" %}
+{% block content %}
+<div class="container-xxl flex-grow-1 container-p-y">
+    <div class="breadcrumb">
+        <h4 class="fw-blod">Typography</h4>
+        <div class="breadcrumb-list">
+            <ol>
+                <li class="breadcrumb-item">
+                    <a href="index.html">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <a href="javascript:void(0)">User Interface</a>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="row match-height">
+        <!-- Default -->
+        <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Default</h4>
+                </div>
+                <div class="card-body">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Accordion 1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eius fugiat eos, cupiditate alias perspiciatis hic nisi ipsum aliquid incidunt aut odit voluptas nemo! Minus incidunt quae adipisci voluptatibus. Aspernatur!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Accordion 2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio labore quam saepe praesentium aspernatur omnis, officia repellat voluptas ipsam? Quam magni iste odio quis molestias numquam perferendis cupiditate quia iure.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Accordion 3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque beatae dicta voluptatum maxime nobis, placeat sapiente ad quo assumenda reiciendis hic dolorum sint iste nisi temporibus, ipsum tempora incidunt quidem!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Default -->
+
+        <!-- With margin -->
+        <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">With Margin</h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text code-desc">
+                        Add <code>.accordion-with-margin</code> classes to accordion element.
+                    </p>
+                    <div class="accordion accordion-with-margin" id="accordionWithMarginExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingWithMarginOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseWithMarginOne" aria-expanded="true"
+                                    aria-controls="collapseWithMarginOne">
+                                    Accordion 1
+                                </button>
+                            </h2>
+                            <div id="collapseWithMarginOne" class="accordion-collapse collapse show"
+                                aria-labelledby="headingWithMarginOne" data-bs-parent="#accordionWithMarginExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error libero voluptatum
+                                    quasi reiciendis labore distinctio molestiae dolore fugiat? Quia consequuntur
+                                    deleniti dolorum numquam magni itaque in. Atque a ipsum vitae.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingWithMarginTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseWithMarginTwo" aria-expanded="false"
+                                    aria-controls="collapseWithMarginTwo">
+                                    Accordion 2
+                                </button>
+                            </h2>
+                            <div id="collapseWithMarginTwo" class="accordion-collapse collapse"
+                                aria-labelledby="headingWithMarginTwo" data-bs-parent="#accordionWithMarginExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis nostrum
+                                    accusamus vitae repellendus tenetur sed asperiores tempore explicabo reiciendis
+                                    atque dicta at, labore tempora cupiditate minima, corporis, eligendi consequatur
+                                    quos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingWithMarginThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseWithMarginThree" aria-expanded="false"
+                                    aria-controls="collapseWithMarginThree">
+                                    Accordion 3
+                                </button>
+                            </h2>
+                            <div id="collapseWithMarginThree" class="accordion-collapse collapse"
+                                aria-labelledby="headingWithMarginThree" data-bs-parent="#accordionWithMarginExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi nulla dolorum
+                                    atque sequi dicta, architecto consequuntur quod minima cumque, ea voluptatibus
+                                    laboriosam minus eius cum id amet harum nobis? Doloribus!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- With margin -->
+
+        <!-- Always open -->
+        <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Always Open</h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text code-desc">
+                        Omit the <code>data-bs-parent</code> attribute on each <code>.accordion-collpse</code> to make accordion items stay open when another item is opened.
+                    </p>
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    Accordion 1
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tempore sed beatae placeat incidunt dolorum cupiditate quam libero sunt deserunt, reprehenderit amet aperiam nostrum veritatis? Labore id culpa placeat reprehenderit?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    Accordion 2
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio odit hic quidem iure, ad numquam vitae voluptatum nobis amet beatae doloremque dolor pariatur mollitia quas harum sequi alias iste tenetur!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    Accordion 3
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate magnam, praesentium exercitationem at tenetur id sit eius, pariatur in optio quos sint dolorum ad! Similique modi architecto libero facere illo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Always open -->
+
+        <!-- Flush -->
+        <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Flush</h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text code-desc">
+                        Add <code>.accordion-flush</code> classes to accordion element.
+                    </p>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFlushOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFlushOne" aria-expanded="true"
+                                    aria-controls="collapseFlushOne">
+                                    Accordion 1
+                                </button>
+                            </h2>
+                            <div id="collapseFlushOne" class="accordion-collapse collapse show"
+                                aria-labelledby="headingFlushOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error libero voluptatum
+                                    quasi reiciendis labore distinctio molestiae dolore fugiat? Quia consequuntur
+                                    deleniti dolorum numquam magni itaque in. Atque a ipsum vitae.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFlushTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFlushTwo" aria-expanded="false"
+                                    aria-controls="collapseFlushTwo">
+                                    Accordion 2
+                                </button>
+                            </h2>
+                            <div id="collapseFlushTwo" class="accordion-collapse collapse"
+                                aria-labelledby="headingFlushTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis nostrum
+                                    accusamus vitae repellendus tenetur sed asperiores tempore explicabo reiciendis
+                                    atque dicta at, labore tempora cupiditate minima, corporis, eligendi consequatur
+                                    quos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFlushThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFlushThree" aria-expanded="false"
+                                    aria-controls="collapseFlushThree">
+                                    Accordion 3
+                                </button>
+                            </h2>
+                            <div id="collapseFlushThree" class="accordion-collapse collapse"
+                                aria-labelledby="headingFlushThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi nulla dolorum
+                                    atque sequi dicta, architecto consequuntur quod minima cumque, ea voluptatibus
+                                    laboriosam minus eius cum id amet harum nobis? Doloribus!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Flush -->
+    </div>
+</div>
+{% endblock %}

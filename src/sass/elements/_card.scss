@@ -1,0 +1,15 @@
+.card{
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 0.375rem 0.25rem rgb(161 172 184 / 15%);
+
+    .card-header{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: #fff;
+
+        .card-title{
+            margin-bottom: 0 !important;
+        }
+    }
+}

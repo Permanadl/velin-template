@@ -1,0 +1,25 @@
+@import "templates/main";
+@import "templates/sidebar";
+@import "templates/topbar";
+@import "elements/card";
+@import "elements/typography";
+@import "elements/accordion";
+
+.code-desc{
+    background-color: rgb(161 172 184 / 10%);
+    padding: 1rem;
+    text-align: justify;
+    border-radius: .5rem;
+}
+
+.row.match-height{
+    > [class*='col']{
+        display: flex;
+        flex-direction: column;
+
+        .card{
+            height: 100% !important;
+            margin-bottom: 1.5rem !important;
+        }
+    }
+}

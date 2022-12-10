@@ -1,0 +1,44 @@
+.main-wrapper .main-page{
+    flex-basis: 100%;
+    flex-direction: column;
+    width: 0;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.main-page{
+    display: flex;
+    flex: 1 1 auto;
+    align-items: stretch;
+    padding: 0;
+}
+
+.navbar-container{
+    position: relative;
+    height: 3.875rem;
+    flex-wrap: nowrap;
+    background-color: #fff;
+    box-shadow: 0 0 0.375rem 0.25rem rgb(161 172 184 / 15%);
+    width: calc(100% - (1.625rem * 2));
+    margin: .75rem auto 0;
+    border-radius: .5rem;
+    padding: 0 1.5rem;
+    color: $bs-body-color;
+
+    .navbar-toggle .nav-item{
+        color: #3c454f;
+    }
+}
+
+.dropdown-toggle.hide-arrow::after{
+    display: none;
+}
+
+.dropdown-user .dropdown-menu{
+    border: none;
+}
+
+.dropdown-item .feather{
+    width: 20px;
+    height: auto;
+}
