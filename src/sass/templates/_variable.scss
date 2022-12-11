@@ -10,8 +10,11 @@ $bs-font-family: $bs-font-sans-serif;
 
 $bs-colors: (
     "primary": #696cff,
-    "success": #71dd37
+    "success": #71dd37,
+    "warning": #ffab00,
+    "danger": #ff3e1d,
+    "secondary": #8592a3,
+    "info": #03c3ec,
+    "dark": #233446,
+    "light": #fcfdfd,
 );
-
-$accordion-icon-color: $bs-body-color;
-$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path stroke-linejoin='round' stroke-width='20' fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");

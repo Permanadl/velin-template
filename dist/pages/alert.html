@@ -1,4 +1,21 @@
-<aside class="sidebar-menu menu">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velin - Bootstrap 5 Admin Template</title>
+
+    <!-- Bootstrap 5.2.3 -->
+    <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
+
+    <!-- Velim Styles -->
+    <link rel="stylesheet" href="../assets/css/velin.min.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="main-container">
+            <aside class="sidebar-menu menu">
     <div class="app-brand">
         <a href="index.html" class="app-brand-link">
             <span class="brand-logo"></span>
@@ -372,3 +389,199 @@
         </li>
     </ul>
 </aside>
+            <div class="main-page">
+                <nav class="navbar-container navbar navbar-expand-xl align-items-center">
+    <div class="navbar-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-lg-none">
+        <a href="javascript:void(0)" class="nav-item">
+            <i data-feather="menu"></i>
+        </a>
+    </div>
+
+    <!-- Search box -->
+    <div class="d-flex align-items-center navbar-nav-right">
+        <div class="navbar-nav align-items-center">
+            <div class="nav-item d-flex align-items-center">
+                <i data-feather="search"></i>
+                <input type="text" class="form-control border-0 shadow-none" placeholder="Search..." aria-label="Search...">
+            </div>
+        </div>
+    </div>
+    <!-- Search box -->
+
+    <ul class="navbar-nav flex-row align-items-center ms-auto">
+        <!-- User -->
+        <li class="nav-item navbar-dropdown dropdown-user dropdown">
+            <a href="javascript:void(0)" class="nav-link dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                <div class="avatar avatar-online">
+                    <img src="../assets/images/avatar.jpg" alt="" class="w-px-40 h-auto rounded-circle">
+                </div>
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                    <a href="javascript:void(0)" class="dropdown-item">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                                <div class="avatar avatar-online">
+                                    <img src="../assets/images/avatar.jpg" alt="" class="w-px-40 h-auto rounded-circle">
+                                </div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <span class="fw-semibold d-block">Permana</span>
+                                <small class="text-muted">Admin</small>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="dropdown-divider"></div>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="dropdown-item">
+                        <i class="me-2" data-feather="user"></i>
+                        <span class="align-middle">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="dropdown-item">
+                        <i class="me-2" data-feather="settings"></i>
+                        <span class="align-middle">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="dropdown-divider"></div>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="dropdown-item">
+                        <i class="me-2" data-feather="log-out"></i>
+                        <span class="align-middle">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- User -->
+    </ul>
+</nav>
+
+                <!-- Content wrapper -->
+                <div class="content-wrapper">
+                    
+<div class="container-xxl flex-grow-1">
+    <div class="breadcrumb">
+        <h4 class="fw-blod">Alert</h4>
+        <div class="breadcrumb-list">
+            <ol>
+                <li class="breadcrumb-item">
+                    <a href="index.html">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="javascript:void(0)">User Interface</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <a href="javascript:void(0)">Alert</a>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="row match-height">
+        <!-- Simple alert -->
+        <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Simple Alert</h4>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-primary" role="alert">
+                        A simple primary alert!
+                    </div>
+                    <div class="alert alert-secondary" role="alert">
+                        A simple secondary alert!
+                    </div>
+                    <div class="alert alert-warning" role="alert">
+                        A simple warning alert!
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        A simple danger alert!
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                        A simple success alert!
+                    </div>
+                    <div class="alert alert-info" role="alert">
+                        A simple info alert!
+                    </div>
+                    <div class="alert alert-light" role="alert">
+                        A simple light alert!
+                    </div>
+                    <div class="alert alert-dark" role="alert">
+                        A simple dark alert!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Simple alert -->
+
+        <!-- Customer alert -->
+        <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Customer alert</h4>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-primary">
+                        <div class="alert-heading">
+                            Alert with heading
+                        </div>
+                        <div class="alert-body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui labore accusamus mollitia nulla ullam commodi id! Quaerat, nostrum. Et reprehenderit illo doloribus! Temporibus laboriosam accusamus ipsum voluptatum autem impedit cupiditate.
+                        </div>
+                    </div>
+                    <div class="alert alert-warning alert-with-icon">
+                        <div class="alert-icon">
+                            <i data-feather="alert-circle" class="icon" size="20"></i>
+                        </div>
+                        <div class="alert-body">An example alert with icon</div>
+                    </div>
+                    <div class="alert alert-danger alert-with-icon alert-dismissible">
+                        <div class="alert-icon">
+                            <i data-feather="alert-circle" class="icon" size="20"></i>
+                        </div>
+                        <div class="alert-body">Alert dismissible</div>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Customer alert -->
+    </div>
+</div>
+
+
+                    <!-- Footer -->
+                    <footer class="content-footer footer">
+                        <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-column flex-md-row">
+                            <div class="mb-2 mb-md-0">
+                                &copy; <script>document.write(new Date().getFullYear())</script>, made with ❤️ by
+                                <a href="" class="footer-link fw-bolder">Dede Eli Permana</a>
+                            </div>
+                            <div>
+                                <a href="" class="footer-link me-4" target="_blank">Github</a>
+                                <a href="" class="footer-link me-4" target="_blank">Documentation</a>
+                                <a href="" class="footer-link me-4" target="_blank">Support</a>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- Footer -->
+                </div>
+                <!-- Content wrapper -->
+            </div>
+        </div>
+    </div>
+    <!-- Vendors -->
+    <script src="../assets/vendors/jquery/jquery.min.js"></script>
+    <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendors/feather-icons/feather.min.js"></script>
+    
+    <script src="../assets/js/velin.min.js"></script>
+</body>
+</html>

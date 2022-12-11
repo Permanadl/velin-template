@@ -1,0 +1,83 @@
+$alert-primary-color: map-get($map: $bs-colors, $key: "primary");
+$alert-secondary-color: map-get($map: $bs-colors, $key: "secondary");
+$alert-info-color: map-get($map: $bs-colors, $key: "info");
+$alert-success-color: map-get($map: $bs-colors, $key: "success");
+$alert-warning-color: map-get($map: $bs-colors, $key: "warning");
+$alert-danger-color: map-get($map: $bs-colors, $key: "danger");
+$alert-light-color: map-get($map: $bs-colors, $key: "light");
+$alert-dark-color: map-get($map: $bs-colors, $key: "dark");
+$alert-opacity: .25;
+
+.alert{
+    color: #000;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 0.325rem 0.25rem rgb(161 172 184 / 10%);
+
+    &.alert-with-icon{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .alert-icon{
+            margin-right: .75rem;
+
+            .icon{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    .btn-close{
+        width: .3rem;
+        height: .3rem;
+        padding: 1.6rem;
+
+        &:focus{
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+}
+
+.alert-heading{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: .5rem;
+    border-bottom: rgba($color: $bs-body-color, $alpha: .5)  1px solid;
+    margin-bottom: 1rem;
+}
+
+.alert-primary{
+    background-color: rgba($color: $alert-primary-color, $alpha: $alert-opacity);
+}
+
+.alert-secondary{
+    background-color: rgba($color: $alert-secondary-color, $alpha: $alert-opacity);
+}
+
+.alert-info{
+    background-color: rgba($color: $alert-info-color, $alpha: $alert-opacity);
+}
+
+.alert-warning{
+    background-color: rgba($color: $alert-warning-color, $alpha: $alert-opacity);
+}
+
+.alert-success{
+    background-color: rgba($color: $alert-success-color, $alpha: $alert-opacity);
+}
+
+.alert-danger{
+    background-color: rgba($color: $alert-danger-color, $alpha: $alert-opacity);
+}
+
+.alert-dark{
+    background-color: rgba($color: $alert-dark-color, $alpha: $alert-opacity);
+}
+
+.alert-light{
+    background-color: rgba($color: $alert-light-color, $alpha: $alert-opacity);
+}
