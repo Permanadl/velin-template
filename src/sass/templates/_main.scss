@@ -100,6 +100,13 @@ a{
 
 }
 
+@media (max-width: 991px){
+    .content-wrapper{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
 .breadcrumb h4{
     font-weight: 600;
     padding-right: 1rem;

@@ -8,14 +8,15 @@
 
     <!-- Bootstrap 5.2.3 -->
     <link rel="stylesheet" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
 
     <!-- Velim Styles -->
     <link rel="stylesheet" href="../assets/css/velin.min.css">
 </head>
-<body>
+<body class="sidebar-fixed">
     <div class="main-wrapper">
         <div class="main-container">
-            <aside class="sidebar-menu menu">
+            <aside class="sidebar-menu menu" id="sidebar-menu">
     <div class="app-brand">
         <a href="index.html" class="app-brand-link">
             <span class="brand-logo"></span>
@@ -26,7 +27,7 @@
         </a>
     </div>
     <div class="sidebar-menu-shadow"></div>
-    <ul class="menu-list py-1">
+    <ul class="menu-list py-1 ps-menu">
         <li class="menu-item">
             <a href="index.html" class="menu-link">
                 <i class="menu-icon" data-feather="airplay"></i>
@@ -491,6 +492,7 @@
     <script src="../assets/vendors/jquery/jquery.min.js"></script>
     <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/vendors/feather-icons/feather.min.js"></script>
+    <script src="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     
     <script src="../assets/js/velin.min.js"></script>
 </body>

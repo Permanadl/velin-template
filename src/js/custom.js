@@ -46,3 +46,23 @@ $.each(menus, function(key, menu){
         })
     }
 })
+
+// perfect scrollbar
+const containerMenu = $('.ps-menu')
+$.each(containerMenu, function(key, elem){
+    let ps = new PerfectScrollbar(elem, {
+        wheelSpeed: 2,
+        wheelPropagation: false,
+        suppressScrollX: true
+    })
+
+    ps.update()
+
+    elem.addEventListener('ps-scroll-y', function() {
+        $('.sidebar-menu-shadow').css('display', 'block')
+    })
+    
+    elem.addEventListener('ps-y-reach-start', function(){
+        $('.sidebar-menu-shadow').css('display', 'none')
+    })
+})
