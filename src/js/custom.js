@@ -53,7 +53,8 @@ $.each(containerMenu, function(key, elem){
     let ps = new PerfectScrollbar(elem, {
         wheelSpeed: 2,
         wheelPropagation: false,
-        suppressScrollX: true
+        suppressScrollX: true,
+        minScrollbarLength: 200
     })
 
     ps.update()
