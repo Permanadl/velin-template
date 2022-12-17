@@ -1,0 +1,15 @@
+@mixin badge-variant($color: map-get($map: $bs-colors, $key: 'primary')) {
+  background-color: $color;
+  &:hover {
+    background-color: darken($color: $color, $amount: 8%);
+  }
+}
+
+@mixin badge-light-variant($color: map-get($map: $bs-colors, $key: 'primary')) {
+  background-color: lighten($color: $color, $amount: 25%);
+  color: $color;
+  &:hover {
+    background-color: darken($color: $color, $amount: 10%);
+    color: #fff;
+  }
+}

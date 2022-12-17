@@ -1,0 +1,48 @@
+@use 'mixins/mixins' as mixins;
+
+.badge{
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 500;
+    padding: .5rem;
+
+    @each $class, $color in $bs-colors{
+        &.badge-#{$class}{
+            @include mixins.badge-variant($color);
+        }
+
+        &.badge-light-#{$class}{
+            @include mixins.badge-light-variant($color)
+        }
+    }
+}
+
+h1 .badge{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+h2 .badge{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+h3 .badge{
+    font-size: 1.75rem;
+    text-transform: capitalize;
+}
+
+h4 .badge{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+h5 .badge{
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+
+h6 .badge{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
