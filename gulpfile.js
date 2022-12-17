@@ -52,7 +52,10 @@ gulp.task('compile-html', async function(){
 
 gulp.task('copy-vendor', async function(){
     gulp.src(
-        npmDist({copyUnminified: true}), 
+        npmDist({
+            copyUnminified: true,
+            excludes: ['/**/*.txt']
+        }), 
         {base:'./node_modules'}
     ).pipe(rename(function(path) {
         path.dirname = path.dirname.replace(/\/dist/, '').replace(/\\dist/, '');
