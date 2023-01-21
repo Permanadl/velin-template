@@ -7,6 +7,7 @@
 @import "elements/alert";
 @import "elements/badges";
 @import "elements/breadcrumb";
+@import "elements/button";
 
 .code-desc{
     background-color: rgb(161 172 184 / 10%);
@@ -23,6 +24,23 @@
         .card{
             height: 100% !important;
             margin-bottom: 1.5rem !important;
+        }
+    }
+}
+
+.demo-inline-spacing > *{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media(max-width:991px){
+    .demo-inline-spacing {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        > *{
+            margin-bottom: 1rem;
         }
     }
 }

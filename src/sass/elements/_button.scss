@@ -1,0 +1,62 @@
+@use 'mixins/mixins' as mixins;
+
+.btn{
+    font-weight: 500;
+    padding: .7rem 1rem;
+    border-radius: .5rem;
+
+    &:hover{
+        transform: translateY(-1px);
+        transition: transform 300ms ease-in-out;
+    }
+
+    @each $class, $color in $bs-colors{
+        &.btn-#{$class}{
+            @include mixins.btn-variant($color);
+        }
+
+        &.btn-outline-#{$class}{
+            @include mixins.btn-outline-variant($color);
+        }
+
+        &.btn-gradient-#{$class}{
+            @include mixins.btn-gradient-variant($color);
+        }
+
+        &.btn-flat-#{$class}{
+            @include mixins.btn-flat-variant($color);
+        }
+    }
+
+    &.btn-rounded{
+        border-radius: 50rem !important;
+    }
+
+    &.btn-xl{
+        padding: 1.5rem 2rem;
+        font-size: 1.25rem;
+    }
+
+    &.btn-lg{
+        padding: .825rem 1.5rem;
+        font-size: 1.15rem;
+    }
+
+    &.btn-sm{
+        padding: .5rem .5rem;
+        font-size: .825rem;
+    }
+
+    &.btn-xs{
+        padding: .4rem .5rem;
+        font-size: .65rem;
+    }
+
+    &.active{
+        background-color: darken($color: map-get($map: $bs-colors, $key: 'primary'), $amount: 8%);
+    }
+
+    &.btn-block{
+        width: 100%;
+    }
+}

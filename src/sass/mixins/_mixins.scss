@@ -13,3 +13,72 @@
     color: #fff;
   }
 }
+
+
+@mixin btn-variant($color: map-get($map: $bs-colors, $key: 'primary')){
+  background-color: $color;
+  border: none;
+  color: #fff;
+  box-shadow: 0 0 4px lighten($color: $color, $amount: 8%);
+  
+  &:hover{
+    background-color: darken($color: $color, $amount: 8%);
+  }
+  
+  &:active{
+    background-color: rgba($color: $color, $alpha: .9);
+    box-shadow: 0 0 6px lighten($color: $color, $amount: 8%);
+    color: #fff;
+  }
+}
+
+@mixin btn-outline-variant($color: map-get($map: $bs-colors, $key: 'primary')){
+  background-color: #fff;
+  border: 1px $color solid;
+  color: #3c454f;
+  
+  &:hover{
+    background-color: $color;
+    box-shadow: 0 0 4px lighten($color: $color, $amount: 8%);
+    color: #fff;
+  }
+
+  &:active{
+    border: 1px $color solid;
+    box-shadow: 0 0 10px lighten($color: $color, $amount: 4%);
+    color: #fff;
+  }
+}
+
+@mixin btn-gradient-variant($color: map-get($map: $bs-colors, $key: 'primary')){
+  background-image: linear-gradient(to right, $color, lighten($color: $color, $amount: 10%));
+  border: none;
+  color: #fff;
+  
+  &:hover{
+    background-color: darken($color: $color, $amount: 8%);
+  }
+  
+  &:active{
+    background-color: rgba($color: $color, $alpha: .9);
+    box-shadow: 0 0 6px lighten($color: $color, $amount: 8%);
+    color: #fff;
+  }
+}
+
+@mixin btn-flat-variant($color: map-get($map: $bs-colors, $key: 'primary')){
+  background-color: transparent;
+  border: none;
+  color: $color;
+  
+  &:hover{
+    background-color: lighten($color: $color, $amount: 20%);
+    color: $color;
+  }
+  
+  &:active{
+    background-color: rgba($color: $color, $alpha: .9);
+    box-shadow: 0 0 6px lighten($color: $color, $amount: 8%);
+    color: #fff;
+  }
+}
