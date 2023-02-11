@@ -1,3 +1,4 @@
+
 .card{
     border: none;
     border-radius: .5rem;
@@ -10,6 +11,16 @@
 
         .card-title{
             margin-bottom: 0 !important;
+
         }
+
+        p,span{
+            margin-bottom: 0px;
+            font-size: .875rem;
+        }
+    }
+
+    .card-link{
+        color: map-get($map: $bs-colors, $key: 'primary');
     }
 }
