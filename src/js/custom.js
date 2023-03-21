@@ -25,6 +25,16 @@ $('.sidebar-menu-toggle').on('click', function(e){
     $('.sidebar-menu').removeClass('sidebar-menu-expanded')
 })
 
+$('.sidebar-menu-expand-toggle').on('click', function(){
+    $('.sidebar-menu').toggleClass('collapsed')
+    $('.main-page').toggleClass('expanded')
+    if ($('.sidebar-menu').hasClass('collapsed')) {
+        $(this).children().replaceWith(feather.icons['circle'].toSvg())
+    } else {
+        $(this).children().replaceWith(feather.icons['disc'].toSvg())
+    }
+})
+
 // set active menu
 const url = window.location.href
 const origin = window.location.origin
