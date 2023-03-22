@@ -57,6 +57,12 @@ $.each(menus, function(key, menu){
     }
 })
 
+if (pathname.split('/').reverse()[0] == '') {
+    $('[href="index.html"]').parents('.menu-item').addClass('active')
+}
+
+var activeHeightMenu = $('.menu-item.active').outerHeight()
+
 // perfect scrollbar
 const containerMenu = $('.ps-menu')
 $.each(containerMenu, function(key, elem){
@@ -77,3 +83,14 @@ $.each(containerMenu, function(key, elem){
         $('.sidebar-menu-shadow').css('display', 'none')
     })
 })
+
+// scroll to active menu
+setTimeout(() => {
+    var activeElHeight = $('.menu-item.active:not(.open)').offset().top
+
+    var scrollTo = activeElHeight - containerMenu.scrollTop() - parseInt(containerMenu[0].clientHeight/2)
+
+    containerMenu.stop().animate({
+        scrollTop: scrollTo
+    }, 300)
+}, 300);

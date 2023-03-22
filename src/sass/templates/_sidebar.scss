@@ -278,7 +278,11 @@
             display: flex;
             padding-top: 0.3125rem;
             padding-bottom: 0.3125rem;
-            max-height: 370px;
+            max-height: 100%;
+            transition: max-height 0.5s ease-in-out, 
+                padding-bottom 0.5s ease-in-out,
+                padding-top 0.5s ease-in-out,
+                display 0.5s ease-in-out;
         }
 
         > .menu-toggle::after{
@@ -303,8 +307,7 @@
         padding: 0;
         padding-left: 1rem;
         max-height: 0;
-        transition-duration: 0.5s;
-        transition-property: all;
+        transition: padding 0.5s ease-in-out, max-height 0.5s ease-in-out, margin 0.5s ease-in-out;
 
         .menu-link{
             color: map-get($map: $bs-colors, $key: "light") !important;
