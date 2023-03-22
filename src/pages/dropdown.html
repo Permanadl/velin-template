@@ -1,0 +1,132 @@
+{% extends "templates/main.html" %}
+{% block content %}
+<div class="container-xxl flex-grow-1">
+    <div class="breadcrumb">
+        <h4 class="fw-blod">Dropdown</h4>
+        <div class="breadcrumb-list">
+            <ol>
+                <li class="breadcrumb-item">
+                    <a href="index.html">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="javascript:void(0)">Components</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <a href="javascript:void(0)">Dropdown</a>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="row match-height">
+        <!-- dropdowns -->
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Dropdowns</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <h6>Basic</h6>
+                            {% set items = [{color: 'primary', text: 'Primary'}, {color: 'secondary', text: 'Secondary'}, {color: 'success', text: 'Success'}, {color: 'danger', text: 'Danger'}, {color: 'warning', text: 'Warning'}, {color: 'info', text: 'Info'}, {color: 'dark', text: 'Dark'}] %}
+
+                            {% for item in items %}
+                            <div class="btn-group">
+                                <button class="btn btn-{{ item.color }} dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" type="button">{{ item.text }}</button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Action</a></li>
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Another action</a></li>
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Something else here</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Separated link</a></li>
+                                </ul>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div class="col-12 mt-4">
+                            <h6>Rounded</h6>
+
+                            {% for item in items %}
+                            <div class="btn-group">
+                                <button class="btn btn-rounded btn-{{ item.color }} dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                    type="button">{{ item.text }}</button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Action</a></li>
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Another action</a></li>
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Something else here</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Separated link</a></li>
+                                </ul>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div class="col-12 mt-4">
+                            <h6>Gradient</h6>
+
+                            {% for item in items %}
+                            <div class="btn-group">
+                                <button class="btn btn-gradient-{{ item.color }} dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                    type="button">{{ item.text }}</button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Action</a></li>
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Another action</a></li>
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Something else here</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Separated link</a></li>
+                                </ul>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div class="col-12 mt-4">
+                            <h6>Flat</h6>
+
+                            {% for item in items %}
+                            <div class="btn-group">
+                                <button class="btn btn-flat-{{ item.color }} dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                    type="button">{{ item.text }}</button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Action</a></li>
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Another action</a></li>
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Something else here</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Separated link</a></li>
+                                </ul>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div class="col-12 mt-4">
+                            <h6>Split</h6>
+
+                            {% for item in items %}
+                            <div class="btn-group">
+                                <button class="btn btn-{{ item.color }}">{{ item.text }}</button>
+                                <button class="btn btn-{{ item.color }} dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"
+                                    type="button">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Action</a></li>
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Another action</a></li>
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Something else here</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a href="javascript:void(0)" class="dropdown-item">Separated link</a></li>
+                                </ul>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
