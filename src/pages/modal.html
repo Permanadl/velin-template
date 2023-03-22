@@ -1,0 +1,112 @@
+{% extends "templates/main.html" %}
+{% block content %}
+<div class="container-xxl flex-grow-1">
+    <div class="breadcrumb">
+        <h4 class="fw-blod">Modal</h4>
+        <div class="breadcrumb-list">
+            <ol>
+                <li class="breadcrumb-item">
+                    <a href="index.html">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="javascript:void(0)">Components</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <a href="javascript:void(0)">Modal</a>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="row match-height">
+        <!-- bootstrap modals -->
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Bootstrap Modals</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalDefault">
+                                Default Modal
+                            </button>
+    
+                            <div class="modal fade" tabindex="-1" aria-hidden="true" id="modalDefault">
+                                {% import "components/modal-dialog.html" as modal %}
+    
+                                {{ modal.modal('Modal Default') }}
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalStatic">
+                                Static Modal
+                            </button>
+    
+                            <div class="modal fade" data-bs-backdrop="static" tabindex="-1" aria-hidden="true" id="modalStatic">
+                                {{ modal.modal('Modal static') }}
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalScrollable">
+                                Scrollable Modal
+                            </button>
+                            
+                            <div class="modal fade" tabindex="-1" aria-hidden="true" id="modalScrollable">
+                                {{ modal.modal('Modal Scrollable', class='modal-dialog-scrollable') }}
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalCentered">
+                                Modal Centered
+                            </button>
+                            
+                            <div class="modal fade" tabindex="-1" aria-hidden="true" id="modalCentered">                            
+                                {{ modal.modal('Modal Centered', class='modal-dialog-centered') }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-3">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalxl">
+                                Modal extra large
+                            </button>
+                            
+                            <div class="modal fade" tabindex="-1" aria-hidden="true" id="modalxl">
+                                {{ modal.modal('Modal Centered', class='modal-xl') }}
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalLarge">
+                                Modal large
+                            </button>
+                            
+                            <div class="modal fade" tabindex="-1" aria-hidden="true" id="modalLarge">
+                                {{ modal.modal('Modal Centered', class='modal-lg') }}
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalSmall">
+                                Modal small
+                            </button>
+                            
+                            <div class="modal fade" tabindex="-1" aria-hidden="true" id="modalSmall">
+                                {{ modal.modal('Modal Centered', class='modal-sm') }}
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalFullscreen">
+                                Modal fullscreen
+                            </button>
+                            
+                            <div class="modal fade" tabindex="-1" aria-hidden="true" id="modalFullscreen">
+                                {{ modal.modal('Modal Centered', class='modal-fullscreen') }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

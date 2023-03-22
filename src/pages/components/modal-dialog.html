@@ -1,0 +1,28 @@
+{% macro modal(title='Modal title', class='') %}
+<div class="modal-dialog {{ class | escape }}">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">{{ title }}</h4>
+            <button class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae facilis officia illum aut, voluptatum placeat ea totam assumenda! Quaerat distinctio nam autem earum, eveniet consectetur blanditiis vitae odit quam velit?</p>
+
+            {% if class == 'modal-dialog-scrollable' %}
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod consequatur inventore cumque ab fugiat, eius nulla nostrum maxime provident iure odit quis in tempore, quisquam dolorum incidunt minima magnam aspernatur.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aspernatur quam, cupiditate eaque quae dolore reiciendis explicabo minima voluptates quasi eum exercitationem dolorem quisquam nesciunt quia ipsam? Minus, adipisci dolor.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum odit quaerat deserunt impedit nesciunt beatae quis eligendi quos unde! Laboriosam, molestias iste. Soluta et nemo accusantium non voluptatum ipsum porro.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat expedita id consequatur? Facilis praesentium quibusdam aperiam neque omnis sequi ullam, id quis sed optio voluptates repellendus architecto, dignissimos dolorem! Autem?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptate quos distinctio excepturi quas. Ab nisi rem, unde voluptatum, consequatur reiciendis facilis iste atque incidunt recusandae eaque officia assumenda ea?</p>
+            {% endif %}
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+{% endmacro %}
