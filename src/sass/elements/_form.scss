@@ -5,3 +5,18 @@
     border-radius: .5rem;
     font-weight: 400;
 }
+
+.form-check-input{
+    cursor: pointer;
+
+    &:checked{
+        background-color: map-get($map: $bs-colors, $key: "primary") !important;
+        border-color: map-get($map: $bs-colors, $key: "primary") !important;
+    }
+
+    &:active,
+    &:focus,
+    &:checked{
+        box-shadow: none;
+    }
+}

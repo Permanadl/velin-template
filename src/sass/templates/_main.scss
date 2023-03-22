@@ -18,6 +18,10 @@ body{
     color: $bs-body-color;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 a{
     text-decoration: none;
 

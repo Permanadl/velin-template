@@ -30,6 +30,16 @@ $('.sidebar-menu-expand-toggle').on('click', function(){
     $('.main-page').toggleClass('expanded')
     if ($('.sidebar-menu').hasClass('collapsed')) {
         $(this).children().replaceWith(feather.icons['circle'].toSvg())
+
+        var activeMenu = $('.menu-item.active.open')
+        if (activeMenu.length) {
+            var activeMenuHeight = activeMenu.offset().top
+            var scrollTo = activeMenuHeight - parseInt(containerMenu[0].clientHeight/2)
+
+            containerMenu.stop().animate({
+                scrollTop: scrollTo
+            }, 300)
+        }
     } else {
         $(this).children().replaceWith(feather.icons['disc'].toSvg())
     }

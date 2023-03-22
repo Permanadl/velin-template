@@ -507,7 +507,7 @@
                     
 <div class="container-xxl flex-grow-1">
     <div class="breadcrumb">
-        <h4 class="fw-blod">Breadcrumb</h4>
+        <h4 class="fw-blod">List Group</h4>
         <div class="breadcrumb-list">
             <ol>
                 <li class="breadcrumb-item">
@@ -517,119 +517,219 @@
                     <a href="javascript:void(0)">Components</a>
                 </li>
                 <li class="breadcrumb-item active">
-                    <a href="javascript:void(0)">Breadcrumb</a>
+                    <a href="javascript:void(0)">List Group</a>
                 </li>
             </ol>
         </div>
     </div>
 
     <div class="row match-height">
-        <!-- Default -->
+        <!-- basic example -->
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Default</h4>
+                    <h4 class="card-title">Basic Example</h4>
                 </div>
                 <div class="card-body">
-                    <div class="breadcrumb">
-                        <div class="breadcrumb-list">
-                            <ol>
-                                <li class="breadcrumb-item">
-                                    <a href="javascript:void(0)">Dashboard</a>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Basic</h6>
+                            <ul class="list-group">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item active">An second item activated</li>
+                                <li class="list-group-item">An third item</li>
+                                <li class="list-group-item disabled">An fourth item disabled</li>
+                                <li class="list-group-item">And a fifth one</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Borderless</h6>
+                            <ul class="list-group list-group-borderless">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item active">An second item activated</li>
+                                <li class="list-group-item">An third item</li>
+                                <li class="list-group-item disabled">An fourth item disabled</li>
+                                <li class="list-group-item">And a fifth one</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h6>Flush</h6>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item active">An second item activated</li>
+                                <li class="list-group-item">An third item</li>
+                                <li class="list-group-item disabled">An fourth item disabled</li>
+                                <li class="list-group-item">And a fifth one</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>With Icons</h6>
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex align-items-center">
+                                    <span class="list-group-icon">
+                                        <i class="fa fa-bell"></i>
+                                    </span>
+                                    An item
                                 </li>
-                                <li class="breadcrumb-item">
-                                    <a href="javascript:void(0)">Library</a>
+                                <li class="list-group-item active">
+                                    <span class="list-group-icon">
+                                        <i class="fa fa-key"></i>
+                                    </span>
+                                    An second item activated
                                 </li>
-                                <li class="breadcrumb-item active">
-                                    <a href="javascript:void(0)">Data</a>
+                                <li class="list-group-item">
+                                    <span class="list-group-icon">
+                                        <i class="fa fa-headset"></i>
+                                    </span>
+                                    An third item
                                 </li>
+                                <li class="list-group-item disabled">
+                                    <span class="list-group-icon">
+                                        <i class="fa fa-image"></i>
+                                    </span>
+                                    An fourth item disabled
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="list-group-icon">
+                                        <i class="fa fa-tag"></i>
+                                    </span>
+                                    And a fifth one
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h6>Numbered</h6>
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item active">An second item activated</li>
+                                <li class="list-group-item">An third item</li>
+                                <li class="list-group-item disabled">An fourth item disabled</li>
+                                <li class="list-group-item">And a fifth one</li>
                             </ol>
                         </div>
+                        <div class="col-md-6">
+                            <h6>With badge</h6>
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    An item
+                                    <span class="badge badge-light-primary">14</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center active">
+                                    An second item activated
+                                    <span class="badge badge-light-primary">10</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    An third item
+                                    <span class="badge badge-light-primary">5</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center disabled">
+                                    An fourth item disabled
+                                    <span class="badge badge-light-primary">50</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    And a fifth one
+                                    <span class="badge badge-light-primary">30</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Default -->
-        
-        <!-- Custom -->
+
+        <!-- hover -->
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Custom</h4>
+                    <h4 class="card-title">Hover</h4>
                 </div>
                 <div class="card-body">
-                    <div class="col-12">
-                        <div class="breadcrumb">
-                            <div class="breadcrumb-list breadcrumb-custom-1">
-                                <ol>
-                                    <li class="breadcrumb-item">
-                                        <a href="javascript:void(0)">Dashboard</a>
-                                    </li>
-                                    <li class="breadcrumb-item">
-                                        <a href="javascript:void(0)">Library</a>
-                                    </li>
-                                    <li class="breadcrumb-item active">
-                                        <a href="javascript:void(0)">Data</a>
-                                    </li>
-                                </ol>
-                            </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-hover">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item active">An second item activated</li>
+                                <li class="list-group-item">An third item</li>
+                                <li class="list-group-item disabled">An fourth item disabled</li>
+                                <li class="list-group-item">And a fifth one</li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="breadcrumb">
-                            <div class="breadcrumb-list breadcrumb-custom-2">
-                                <ol>
-                                    <li class="breadcrumb-item">
-                                        <a href="javascript:void(0)">Dashboard</a>
-                                    </li>
-                                    <li class="breadcrumb-item">
-                                        <a href="javascript:void(0)">Library</a>
-                                    </li>
-                                    <li class="breadcrumb-item active">
-                                        <a href="javascript:void(0)">Data</a>
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="breadcrumb">
-                            <div class="breadcrumb-list breadcrumb-custom-3">
-                                <ol>
-                                    <li class="breadcrumb-item">
-                                        <a href="javascript:void(0)">Dashboard</a>
-                                    </li>
-                                    <li class="breadcrumb-item">
-                                        <a href="javascript:void(0)">Library</a>
-                                    </li>
-                                    <li class="breadcrumb-item active">
-                                        <a href="javascript:void(0)">Data</a>
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="breadcrumb">
-                            <div class="breadcrumb-list breadcrumb-custom-4">
-                                <ol>
-                                    <li class="breadcrumb-item">
-                                        <a href="javascript:void(0)">Dashboard</a>
-                                    </li>
-                                    <li class="breadcrumb-item">
-                                        <a href="javascript:void(0)">Library</a>
-                                    </li>
-                                    <li class="breadcrumb-item active">
-                                        <a href="javascript:void(0)">Data</a>
-                                    </li>
-                                </ol>
-                            </div>
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-hover list-group-borderless">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item active">An second item activated</li>
+                                <li class="list-group-item">An third item</li>
+                                <li class="list-group-item disabled">An fourth item disabled</li>
+                                <li class="list-group-item">And a fifth one</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Custom -->
+
+        <!-- with input checkbox and radio -->
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">List Group with Checkbox and Radio</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>With checkbox</h6>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <label for="firstcheckbox">
+                                        <input class="form-check-input me-1" id="firstcheckbox" type="checkbox">
+                                        First checkbox
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label for="secondcheckbox">
+                                        <input class="form-check-input me-1" id="secondcheckbox" type="checkbox">
+                                        Second checkbox
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label for="thirdcheckbox">
+                                        <input class="form-check-input me-1" id="thirdcheckbox" type="checkbox">
+                                        Third checkbox
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>With radio</h6>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <label for="firstradio">
+                                        <input class="form-check-input me-1" name="radio" id="firstradio" type="radio">
+                                        First radio
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label for="secondradio">
+                                        <input class="form-check-input me-1" name="radio" id="secondradio" type="radio">
+                                        Second radio
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label for="thirdradio">
+                                        <input class="form-check-input me-1" name="radio" id="thirdradio" type="radio">
+                                        Third radio
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

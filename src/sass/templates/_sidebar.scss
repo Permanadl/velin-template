@@ -76,6 +76,13 @@
             transition: display 0.5s;
             display: none !important;
         }
+
+        .menu-item.open{
+            .menu-sub{
+                margin: 0 !important;
+                max-height: 0 !important;
+            }
+        }
     }
 
     &:hover{
@@ -102,6 +109,12 @@
     
             .menu-header {
                 display: block !important;
+            }
+
+            .menu-item.open{
+                .menu-sub{
+                    max-height: 100% !important;
+                }
             }
         }
     }
